@@ -1,6 +1,6 @@
 # xbar-jokes-plugin
 
-A simple zruby scropt to display jokes for the macOS application.
+A simple ruby script to display jokes for the macOS application.
 
 ## Installation
 
