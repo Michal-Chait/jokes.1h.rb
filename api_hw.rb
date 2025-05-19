@@ -1,7 +1,11 @@
-#!/usr/bin/env /Users/nom/.rbenv/shims/ruby
+#!/usr/bin/env/Users/nom/.rbenv/shims/ruby
+
 require 'json'
 require 'http'
 
 response = HTTP.get("https://api.adviceslip.com/advice")
-data = response.parse
-puts "Daily Quote: #{data['slip']['advice']}"
+advice = JSON.parse(response.to_s)
+
+puts "Daily Quote: #{advice['slip']['advice']}"
+
+
